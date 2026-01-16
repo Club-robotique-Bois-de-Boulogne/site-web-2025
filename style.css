@@ -128,6 +128,20 @@ header {
     margin-top: 8px;
     text-align: center;
 }
+/* liens invisibles visuellement */
+.cylinder a.dot {
+    text-decoration: none;
+}
+
+.labels a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.labels a:hover {
+    text-decoration: underline;
+}
+
 
 /* ===== NEWS ===== */
 .news-screen {

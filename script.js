@@ -6,35 +6,9 @@ function updateClock() {
 }
 setInterval(updateClock, 60000);
 updateClock();
+/* ===================== NAVIGATION (DOT ACTIF) ===================== */
 
-/* ===== STATIONS ===== */
-const stations = [
-    { name: " Prochaine Station: Accueil", image: "images/mur metro.webp" },
-    { name: "Prochaine Station: Club", image: "images/club.webp" },
-    { name: "Prochaine Station: l'équipe", image: "images/equipe.webp" },
-    { name: "Prochaine Station: Bob le Robot", image: "images/robot.webp" },
-    { name: "Prochaine Station: CRC", image: "images/CRC-Robotics.jpg" },
-    { name: "Prochaine Station: Vidéo", image: "images/Mtl-metro-map.svg.png" }
-];
 
-const dots = document.querySelectorAll(".dot");
-
-function updateStation(index) {
-    const next = stations[(index + 1) % stations.length];
-    document.getElementById("stationName").textContent = next.name;
-    document.getElementById("stationImage").src = next.image;
-}
-
-/* NAVIGATION */
-dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-        dots.forEach(d => d.classList.remove("active"));
-        dot.classList.add("active");
-        updateStation(index);
-    });
-});
-
-updateStation(0);
 
 /* ===== ACTUALITÉS (DÉMO LOCALE GARANTIE) ===== */
 /* ===== RADIO-CANADA ===== */
@@ -46,7 +20,46 @@ const newsTitle = document.getElementById("newsTitle");
 const newsDate = document.getElementById("newsDate");
 
 let news = [];
-let index = 0;
+let index = 0;const pages = [
+    "accueil.html",
+    "club.html",
+    "equipe.html",
+    "robot.html",
+    "crc.html",
+    "video.html"
+];
+
+const stations = [
+    { name: "Prochaine station : Accueil", image: "images/mur metro.webp" },
+    { name: "Prochaine station : Club", image: "images/club.webp" },
+    { name: "Prochaine station : L’équipe", image: "images/equipe.webp" },
+    { name: "Prochaine station : Bob le Robot", image: "images/robot.webp" },
+    { name: "Prochaine station : CRC", image: "images/CRC-Robotics.jpg" },
+    { name: "Prochaine station : Vidéo", image: "images/Mtl-metro-map.svg.png" }
+];
+
+const dots = document.querySelectorAll(".dot");
+
+// page actuelle
+const currentPage =
+    location.pathname.split("/").pop().toLowerCase();
+
+// index actuel
+let currentIndex = pages.indexOf(currentPage);
+if (currentIndex === -1) currentIndex = 0;
+
+// DOT ACTIF
+dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentIndex);
+});
+
+// PROCHAINE STATION
+const nextIndex = (currentIndex + 1) % stations.length;
+document.getElementById("stationName").textContent =
+    stations[nextIndex].name;
+document.getElementById("stationImage").src =
+    stations[nextIndex].image;
+
 
 async function loadNews() {
     const res = await fetch(PROXY + encodeURIComponent(RSS_URL));
