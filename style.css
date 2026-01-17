@@ -93,8 +93,9 @@ h5 {
 
 .texte-image p {
   max-width: 60%;
-  all: unset; /* réinitialise toutes les propriétés héritées */
+  margin: 0;
 }
+
 
 /* =========================================================
    IMAGES / MEDIA
@@ -275,41 +276,38 @@ img {
 
 
 
-/* ===== HEADER : DIMENSIONS EXACTES ===== */
-header {
-    width: 100%;
-    padding: 30px 0 25px;
-    display: flex;
-    justify-content: center;
+/* ===== HEADER COMPACT ===== */
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #b99169;
 
+    width: fit-content;
 
-    background: linear-gradient(
-        to right,
-      rgba(0,0,0,0) 0%,     /* gauche transparent */
-        rgba(0,0,0,0.85) 25%, /* début centre noir */
-        rgba(0,0,0,0.85) 75%, /* fin centre noir */
-        rgba(0,0,0,0) 100%   /* droite transparent */
-    );
+    /* centrage + débordement à droite */
+    margin:0 auto;
+    transform: translateX(60px);
+
+    padding: 10px 0;
+
+    /* transparence gauche / droite */
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.9) 30%,
+    rgba(0,0,0,0.9) 70%,
+    rgba(0,0,0,0) 100%
+  );
 }
 
-.sticky-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  
-}
-
-/* Style appliqué après scroll */
-.sticky-header.scrolled {
-  background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-/* ===== STRUCTURE ===== */
 .top-row {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 24px;
+    width: fit-content;   /* 🔥 largeur minimale */
 }
+
 
 /* ===== PANNEAU GAUCHE ===== */
 .side-panel {
@@ -319,23 +317,21 @@ header {
 }
 
 .clock {
-    height: 70px;
-    width: 160px;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 48px;
+    width: 130px;
+    font-size: 18px;
 }
+
 
 /* ===== STATION ===== */
 .station-card {
-    margin-top: 10px;
-    width: 160px;
-    background: #000;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
+    width: 150px;
 }
+
+.station-card img {
+    height: 70px;
+}
+
 
 .station-card img {
     width: 100%;
@@ -533,6 +529,41 @@ header {
   border: 1px solid white;
   border-radius: 4px;
 }
+h1, h2, h3, h4, h5, h6 {
+  color: #f1e8dc;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,0.7),
+    0 0 10px rgba(185,145,105,0.35);
+}
+.section.blanc h1,
+.section.blanc h2,
+.section.blanc h3 {
+  text-shadow: none;
+  color: #2b1e12;
+}
+.section p,
+.valeur-texte p {
+  text-shadow:
+    0 1px 2px rgba(0,0,0,0.6),
+    0 0 3px rgba(185,145,105,0.25);
+}
+/* ===== IMAGES : CONTOURS TRANSPARENTS (FONDU) ===== */
+img {
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,1) 70%,
+    rgba(0,0,0,0.6) 85%,
+    rgba(0,0,0,0) 100%
+  );
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,1) 70%,
+    rgba(0,0,0,0.6) 85%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
 
 /* =========================================================
    FIN DU FICHIER CSS
