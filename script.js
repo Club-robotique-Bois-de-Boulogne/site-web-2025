@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 /* ===== MASQUAGE HORLOGE + ACTUALITÉS AU SCROLL ===== */
 
-const hideElements = document.querySelectorAll(".hide-on-scroll");
+let hideElements = document.querySelectorAll(".hide-on-scroll");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {

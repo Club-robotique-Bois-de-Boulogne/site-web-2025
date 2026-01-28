@@ -1,5 +1,5 @@
 // global variables
-let equipeInfoArray;
+let equipeInfoArray = []
 const points = document.querySelectorAll(".metro-dot");
 const points_hitbox = document.querySelectorAll(".metro-dot-hitbox");
 const card_info = document.getElementById("card-info");
@@ -43,8 +43,8 @@ function setupEventListeners(){
             if(member){
                 updateCardInfo(member);
                 const rect = point.getBoundingClientRect();
-                const pointX = rect.left + rect.width / 2;
-                const pointY = rect.top + rect.height / 2;
+                const pointX = rect.left + rect.width / 2 + window.scrollX;
+                const pointY = rect.top + rect.height / 2; + window.scrollY;
                 const cardWidth = 240; 
                 const cardHeight = 280;
                 //card offset (at the top right of the card)
