@@ -16,10 +16,10 @@ nav {
     color: white;
     top: 0;
 
-    position: -webkit-sticky; /* Support for Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it stays above the metro map */
+    z-index: 1000;
 
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -153,14 +153,12 @@ fill: white;
   opacity: 1;
   transition: opacity 0.2s;
 
-  /* The Fix: */
   transform-box: fill-box; 
   transform-origin: center;
 
-  transform: scale(1); /* Makes the dot 2.5x larger */
-  /* 2. Run the animation, but don't let it 'lock' the opacity */
+  transform: scale(1);
   animation: appear 0.5s ease-out;
-  animation-fill-mode: backwards; /* This is the key! */
+  animation-fill-mode: backwards;
 }
 
 @keyframes appear {
@@ -169,9 +167,6 @@ fill: white;
     transform: scale(0);
     transform: translate(10px,20px);
   }
-  /* Notice: We don't define a 'to' for opacity here. 
-     The animation will naturally finish and return 
-     control to the .metro-dot class styles. */
 }
 
 .metro-dot-hitbox{
@@ -196,11 +191,9 @@ fill: white;
 }
 
 .metro-join {
-    /* Use 'forwards' so it stays visible after the animation ends */
     animation: appear 0.5s ease-out 1s backwards;
 }
 
-/* master */
 @keyframes appear {
     from {
         transform: translate(0, 10px);
@@ -212,7 +205,6 @@ fill: white;
     }
 }
 .metro-master {
-    /* Use 'forwards' so it stays visible after the animation ends */
     animation: appear 0.5s ease-out 3s backwards;
 }
 
@@ -233,33 +225,28 @@ fill: white;
 }
 /* card info styles */
 #card-info {
-    position: fixed; /* Crucial for positioning via JS */
+    position: fixed;
     display: none;
     z-index: 100;
-    pointer-events: none; /* Prevents the card itself from triggering mouseleave */
+    pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     opacity: 0;
     transform: translateY(10px) scale(0.95);
 
-    /* Glassmorphism Effect */
-    /* 1. Dark Glass Background */
-    background-color: rgba(0, 0, 0, 0.7); /* Deep black with transparency */
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    
-    /* 2. Subtle Border for Definition */
+
     border: 1px solid rgba(255, 255, 255, 0.1); 
     border-radius: 16px;
     padding: 24px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark cards */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     
-    /* 3. Global Text Color */
     color: #ffffff; 
     font-family: 'Segoe UI', Roboto, sans-serif;
     max-width: 320px;
 }
 
-/* The Person's Name */
 #card-info h2 {
     margin: 12px 0 4px 0;
     font-size: 1.6rem;
@@ -267,29 +254,25 @@ fill: white;
     font-weight: 700;
 }
 
-/* The Job Title */
 #card-info h1 {
     margin: 0 0 12px 0;
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #3498db; /* A bright neon blue to pop against the black */
+    color: #3498db;
     font-weight: 600;
 }
 
-/* The Bio/Description */
 #card-info h3 {
     margin: 0 0 15px 0;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #b2bec3; /* Light grey for the bio so it's not too "loud" */
+    color: #b2bec3;
     font-weight: 400;
 }
-
-/* The Hashtag Roles */
 #card-info p span {
     display: inline-block;
-    background: rgba(52, 152, 219, 0.2); /* Transparent blue tint */
+    background: rgba(52, 152, 219, 0.2);
     color: #3498db;
     padding: 3px 10px;
     border-radius: 6px;
@@ -305,7 +288,6 @@ fill: white;
 }
 
 #connector-line {
-    /* We'll set the dasharray in JS since the line length changes */
     transition: stroke-dashoffset 0.4s ease-out;
 }
 
@@ -332,13 +314,12 @@ body, html {
     font-family: 'Segoe UI', sans-serif;
     font-size: 12px;
     font-weight: 600;
-    pointer-events: none; /* Crucial: clicks go through text to the dot below */
+    pointer-events: none;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
-/* Optional: Make the label brighter when hovering the dot */
 .metro-dot-hitbox:hover + .dot-label, 
 .metro-dot-hitbox:hover ~ .dot-label {
     opacity: 1;
