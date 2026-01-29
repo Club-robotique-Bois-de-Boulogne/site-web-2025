@@ -117,6 +117,7 @@ function updateCardInfo(member){
     img.src = getImageSrcFromMember(member);
     img.onerror = () => {
         img.src = "./src/image/team/default.png";
+        img.onerror = null;
     }
     card_info.querySelector('h2').textContent = member.prénom + " " + member.nom;
     card_info.querySelector('h1').textContent = member.slogan;
@@ -148,7 +149,11 @@ async function init() {
         const newCard = document.createElement('div');
         newCard.classList.add("card-list");
         const image = document.createElement('img');
-        image.src = "./src/image/team/"+member.photo;
+        image.src = getImageSrcFromMember(member);
+        image.onerror = function() {
+        this.src = "./src/image/team/default.png";
+        this.onerror = null; // Empêche une boucle infinie si default.png manque aussi
+        };
 
         const rightPart = document.createElement('div');
         rightPart.classList.add("right-part");
@@ -210,8 +215,12 @@ function getRolesFromMember(member) {
 function getImageSrcFromMember(member) {
     const prenom = member.prénom.toLowerCase();
     const premierLettreNom = member.nom.charAt(0);
+    //remove accents
+    const prenomNormalized = prenom.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const premierLettreNomNormalized = premierLettreNom.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    
     const folder = "./src/image/team/";
-    return `${folder}${prenom}${premierLettreNom}.png`;
+    return `${folder}${prenomNormalized}${premierLettreNomNormalized}.webp`;
 }
 
 init();

@@ -3,96 +3,112 @@
    "nom": "Cabana",
    "prénom": "Alexandre",
    "roles": "Programmation, Robot, Site web, Kiosque",
-   "slogan": "4 jours sans briser un truc"
+   "slogan": "4 jours sans briser un truc",
+   "id": "g13"
  },
  {
    "nom": "Altawil",
    "prénom": "Alwafa",
    "roles": "Robot, Kiosque",
-   "slogan": "Sorry, i'm on strike. / Desolé, je suis en grêve."
+   "slogan": "Sorry, i'm on strike. / Desolé, je suis en grêve.",
+   "id": "b1"
  },
  {
    "nom": "Uzel",
    "prénom": "Camille",
    "roles": "Kiosque, Vidéo",
-   "slogan": "Les gars sont trop motivés"
+   "slogan": "Les gars sont trop motivés",
+   "id": "j2"
  },
  {
    "nom": "Cyrenne",
    "prénom": "Emilie",
    "roles": "Mentorat",
-   "slogan": "L'innovation est notre moteur, la robotique notre langage."
+   "slogan": "L'innovation est notre moteur, la robotique notre langage.",
+   "id": "y2"
  },
  {
    "nom": "Dion",
    "prénom": "Émilien",
    "roles": "Robot",
-   "slogan": ""
+   "slogan": "",
+   "id": "o16"
  },
  {
    "nom": "Lavertu",
    "prénom": "Guillaume",
    "roles": "Programmation, Site web",
-   "slogan": "Voyez grand !"
+   "slogan": "Voyez grand !",
+   "id": "g12"
  },
  {
-   "nom": "Occilan ",
-   "prénom": "Haschley ",
+   "nom": "Occilan",
+   "prénom": "Haschley",
    "roles": "Site web, Kiosque",
-   "slogan": "Créative"
+   "slogan": "Créative",
+   "id": "g11"
  },
  {
    "nom": "Dumoulin",
    "prénom": "Jules",
    "roles": "Programmation",
-   "slogan": "Être chef prog, c'est faire tout sauf programmer."
+   "slogan": "Être chef prog, c'est faire tout sauf programmer.",
+   "id": "g15"
  },
  {
    "nom": "Gignac",
    "prénom": "Kohan",
    "roles": "Robot, Kiosque, Video, Jeux",
-   "slogan": ""
+   "slogan": "",
+   "id": "g20"
  },
  {
    "nom": "Corbeil",
    "prénom": "Martin",
    "roles": "Kiosque",
-   "slogan": "Y'avait pas de matériaux, pour tous le reste il y a mastercard"
+   "slogan": "Y'avait pas de matériaux, pour tous le reste il y a mastercard",
+   "id": "b3"
  },
  {
    "nom": "Cebotari",
    "prénom": "Mihai",
    "roles": "jeu vidéo",
-   "slogan": "vive la vie"
+   "slogan": "vive la vie",
+   "id": "g21"
  },
  {
    "nom": "El Assry",
    "prénom": "Mohamed",
    "roles": "Programmation, Robot",
-   "slogan": "Je ne pense pas que couper et limer autant de vis est un processus standard."
+   "slogan": "Je ne pense pas que couper et limer autant de vis est un processus standard.",
+   "id": "o13"
  },
  {
    "nom": "Kraiem ",
    "prénom": "Mohamed ",
    "roles": "Robot, Kiosque, Tutoriel",
-   "slogan": "SIX SEVEN"
+   "slogan": "SIX SEVEN",
+   "id": "o14"
  },
  {
-   "nom": "Dan",
-   "prénom": "Nguyen",
+   "nom": "Nguyen",
+   "prénom": "Dan",
    "roles": "Coach",
-   "slogan": "..."
+   "slogan": "...",
+   "id": "o12"
  },
  {
    "nom": "Zhong",
    "prénom": "Qili",
    "roles": "Kiosque",
-   "slogan": ""
+   "slogan": "",
+   "id": "b2"
  },
  {
    "nom": "Hajjami",
    "prénom": "Selma",
    "roles": "Site web, Kiosque",
-   "slogan": ""
+   "slogan": "",
+   "id": "b4"
  }
 ]
