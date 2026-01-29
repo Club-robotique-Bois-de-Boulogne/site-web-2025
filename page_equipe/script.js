@@ -38,7 +38,7 @@ function setupEventListeners(){
         point.addEventListener('mouseover', function() {
             const currentID = point.id;
             const member = equipeInfoArray.find(p => p.id == currentID);
-            console.log(member.first_name + " " + member.last_name);
+            console.log(member.prénom + " " + member.nom);
             
             if(member){
                 updateCardInfo(member);
@@ -114,21 +114,20 @@ function setupEventListeners(){
 //update cardinfo
 function updateCardInfo(member){
     const img = card_info.querySelector('img');
-    img.src = `./src/image/team/${member.photo}`;
+    img.src = getImageSrcFromMember(member);
     img.onerror = () => {
         img.src = "./src/image/team/default.png";
     }
-    card_info.querySelector('h2').textContent = member.first_name + " " + member.last_name;
-    card_info.querySelector('h1').textContent = member.title;
+    card_info.querySelector('h2').textContent = member.prénom + " " + member.nom;
+    card_info.querySelector('h1').textContent = member.slogan;
     card_info.querySelector('h3').textContent = member.bio;
     const roles = card_info.querySelector('p');
     roles.innerHTML = '';
-    member.roles.forEach(role => {
+    getRolesFromMember(member).forEach(role => {
         const span = document.createElement('span');
         span.textContent = "#"+role;
         roles.appendChild(span);
-    })
-
+    });
 }
 
 async function init() {
@@ -155,13 +154,13 @@ async function init() {
         rightPart.classList.add("right-part");
 
         const name = document.createElement('h2');
-        name.textContent = member.first_name + " " + member.last_name;
-        const title = document.createElement('h1');
-        title.textContent = member.title;
+        name.textContent = member.prénom + " " + member.nom;
+        const slogan = document.createElement('h1');
+        slogan.textContent = member.slogan;
 
         const roles = document.createElement('div');
         roles.innerHTML = '';
-        member.roles.forEach(role => {
+        getRolesFromMember(member).forEach(role => {
             const span = document.createElement('span');
             span.textContent = "#"+role;
             roles.appendChild(span);
@@ -169,7 +168,7 @@ async function init() {
 
         newCard.appendChild(image);
         rightPart.appendChild(name);
-        rightPart.appendChild(title);
+        rightPart.appendChild(slogan);
         rightPart.appendChild(roles);
         newCard.appendChild(rightPart);
 
@@ -199,8 +198,20 @@ async function init() {
         mapButton.classList.add('active');
         listButton.classList.remove('active');
     });
+}
 
-    
+//get roles from member
+function getRolesFromMember(member) {
+    const rolesString = member.roles;
+    return rolesString.split(',').map(role => role.trim());
+}
+
+//get image from member
+function getImageSrcFromMember(member) {
+    const prenom = member.prénom.toLowerCase();
+    const premierLettreNom = member.nom.charAt(0);
+    const folder = "./src/image/team/";
+    return `${folder}${prenom}${premierLettreNom}.png`;
 }
 
 init();
