@@ -299,6 +299,10 @@ header.sticky-header {
     align-items: center;
     gap: 24px;
     width: fit-content;   /* 🔥 largeur minimale */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
 }
 
 

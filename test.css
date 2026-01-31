@@ -1,0 +1,139 @@
+:root {
+    --doorMove: 50%  /* Global variable for consistent padding */
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.slidingdoors div{
+    color: #fff;
+    font-family: 'Verdana';
+    font-weight: bold;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    transition: border 10s ease;
+    border-radius: 3px;
+    box-shadow:
+            0 0 10px #000,
+            0 0 0 5px #fff;
+}
+@keyframes slideOutFromLeft {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+        transform: translateX(calc(-1*var(--doorMove)));
+    }
+    100% {
+        display: none;
+        transform: translateX(calc(-1*var(--doorMove)));
+        opacity: 1;
+    }
+}
+@keyframes slideOutFromRight {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0%);
+        transform-origin: top left;
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+        transform-origin: top left;
+        transform: translateX(var(--doorMove));
+    }
+    100% {
+        display: none;
+        transform-origin: top left;
+        transform: translateX(var(--doorMove));
+        opacity: 1;
+    }
+}
+@keyframes hideAllDoor {
+    0%{
+        background-size: 100vw 100vh;;
+    }
+    20%{
+        background-size: 100vw 100vh;;
+    }
+    99% {
+        background-size: 100vw 100vh;;
+    }
+    100% {
+        background-size: 0;
+    }
+}
+
+h3{
+    font-family: "Courier";
+    color: #fff;
+    text-align: right;
+    margin-right: 50px;
+    text-shadow: 2px 2px 3px #000;
+}
+
+h3 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.allDoor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/doorAnimation/doorEmpty.png');
+    background-position: center;
+    background-size: 0 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    animation: hideAllDoor 2.5s;
+    opacity: 1;
+}
+.leftDoor{
+    width: 31%;
+    height: 80%;
+    animation: 2.5s ease-out 0s 1 slideOutFromLeft;
+    position: relative;
+    float: right;
+    opacity: 0;
+    transform-origin: top right;
+    left: 1%;
+    top: 7%
+}
+.rightDoor{
+    transform-origin: top left;
+    width: 31%;
+    height: 80%;
+    animation: 2.5s ease-out 0s 1 slideOutFromRight;
+    position: relative;
+    float: right;
+    opacity: 0;
+    right: 0%;
+    top: 7%
+}
+
+.realContent{
+    position: absolute;
+}
