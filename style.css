@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     color: #fff;
 
-    /* background-image: url("images/mur metro.webp"); */
+    background-image: url("images/mur metro.webp");
     background-color: #000;
     background-size: cover;
     background-position: center;
@@ -141,6 +141,8 @@ img {
   max-width: 1200px;
   margin: auto;
   background-color:rgba(0, 0, 0, 0.305);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
 
 .valeur-bloc {
