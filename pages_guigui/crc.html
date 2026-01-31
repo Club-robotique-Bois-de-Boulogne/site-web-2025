@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="team-page-content page wrapper">
+
+    <div class="page-name">
+        <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle" r="20" cx="50" cy="50"/>
+        </svg>
+        <h2>À propos de <b>Robotique CRC</b></h2>
+    </div>
+    <div class="team-page-content wrapper page">
         <!-- <nav>
             <div class="nav-logo"></div>
             
@@ -23,32 +30,25 @@
             </div>
         </nav> -->
 
-        <div class="page-name">
-            <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-                <circle class="circle" r="20" cx="50" cy="50"/>
-            </svg>
-            <h2>À propos de <b>Robotique CRC</b></h2>
-        </div>
         <div class="crc-page-content">
             <!-- info crc robotique -->
             <section>
                 <h2>Qu'est-ce que Robotique CRC</h2>
-                <p>Fondée en 1998, Robotique CRC est une entreprise québécoise spécialisée dans la conception, la fabrication et l'intégration de solutions robotiques et automatisées pour
-                divers secteurs industriels. Avec plus de deux décennies d'expérience, Robotique CRC s'est imposée comme un leader dans le domaine de la robotique au Canada, offrant des solutions innovantes et personnalisées à ses clients.
+                <p>
                 </p>    
             </section>
             <!-- info compétition -->
             <section>
-                <h2>Qu'est est-il e la compétition</h2>
-                <p>Robotique CRC participe activement à des compétitions de robotique, notamment la FIRST Robotics Competition (FRC) et la RoboCup. Ces compétitions permettent à l'entreprise de tester ses innovations technologiques, de collaborer avec d'autres experts du domaine et de promouvoir l'importance de la robotique dans l'industrie moderne. En participant à ces événements, Robotique CRC démontre son engagement envers l'excellence et l'innovation dans le domaine de la robotique.</p>
+                <h2>Qu'en est-il de la compétition</h2>
+                <p>La compétions de robotique CRC comporte plusieurs aspects. D’abord, il faut comprendre que la compétition s’étend sur environ 4 mois. Durant cette période, les différentes écoles qui y participent doivent :</p>
                 <ul>
-                    <li>faire la concepation d'un Site-web</li>
-                    <li>créer une vidéo</li>
-                    <li>monter un kiosque</li>
-                    <li>faire un tutoriel</li>
-                    <li>construire un robot</li>
+                    <li>Créer un robot</li>
+                    <li>Créer une vidéo</li>
+                    <li>Monter un kiosque</li>
+                    <li>Faire un tutoriel</li>
+                    <li>Construire un robot</li>
                 </ul>
-                <p>Puis, la compétition (en tant que tel) dure 3 jours. Et c’est à ce moment que les différentes écoles se rassemblent pour affronter leur robot, présenter leur kiosque et participer à une compétition de programmation. </p>
+                <p>Puis, pour une durée de 3 jours, les différentes écoles se rassemblent pour affronter leur robot, présenter leur kiosque et participer à une compétition de programmation.</p>
             </section>
             <!-- LE JEU -->
             <div class="title-separator">
@@ -59,16 +59,72 @@
                 <h2>But du jeu</h2>
                 <p>Le but du jeu est d’amasser le plus de points possible en accomplissant différentes tâches avec le robot sur le terrain de jeu. Chaque tâche réussie rapporte un certain nombre de points, et l’équipe avec le plus de points à la fin du match remporte la victoire.</p>
             </section>
-            <!-- les règles -->
+            <!-- Le terrain-->
             <section>
-                <h2>Les règles</h2>
-                <p>Les règles du jeu sont établies par l’organisation de la compétition et peuvent varier d’une année à l’autre. Cependant, certaines règles générales s’appliquent à toutes les compétitions, telles que :</p>
+                <h2>Le terrain de jeu</h2>
+                <p>Le terrain de jeu comporte 6 stations de réparation, ainsi que 3 moteurs pour chaque équipe pour une total de 6 moteurs.
+                    Il y a aussi une zone de pièces supplémentaires pour chacune des équipes à l'extrémité du terrain.</p>
+                <div class="img-list">
+                    <div class="img-item">
+                        <img src="src/images/crc/terrainAngleView.png" alt="">
+                    </div>
+                    <div class="img-item">
+                        <img src="src/images/crc/terrainTopView.png" alt="">
+
+                </div>
+            </section>
+            <!-- Pièces de jeu -->
+            <section class="section-pieces">
+                <h2>Les pièces de jeu</h2>
+                <p>Dans le jeu, il existe trois types de pièces:</p>
+                <div class="img-list">
+                    <div class="img-item">
+                        <img src="src/images/crc/pieces/blue_medium.png" alt="piece1">
+                        <p>Ventilateur</p>
+                    </div>
+                    <div class="img-item">
+                        <img src="src/images/crc/pieces/blue_big.png" alt="piece1">
+                        <p>Coeur</p>
+                    </div>
+                     <div class="img-item">
+                        <img src="src/images/crc/pieces/blue_small.png" alt="piece1">
+                        <p>Turbine</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Stations -->
+             <section>
+                <h2>Les stations</h2>
+                <p>Il y a deux types de stations sur le terrain de jeu : les moteurs et les stations de réparation. Ceux-ci peuvent contenir trois pièces qui correspondent aux trois types de pièces du jeu.</p>
+                <div class="subsection">
+                    <h3>Les moteurs</h3>
+                    <p>Les moteurs rapportent des points selon le nombre de pièces de la couleur de l’équipe qui y sont placées :</p>
+                    <ul>
+                        <li>1 pièce : 50 points</li>
+                        <li>2 pièces : 100 points</li>
+                        <li>3 pièces : 250 points</li>
+                    </ul>
+
+                </div>
+                <div class="subsection">
+                    <h3>Les stations de réparation</h3>
+                    <p>Elles permettent d’échanger une pièce neutre (rouge) contre une pièce de la couleur de l’équipe. Cela aide à obtenir plus de pièces à placer dans les moteurs ou dans la zone de pièces supplémentaires.</p>
+                </div>
+            </section>
+            <!-- zone de pièces supplémentaires -->
+             <section>
+                <h2>Les zones de pièces supplémentaires</h2>
+                    <p>Chaque pièce placée dans cette zone rapporte 40 points supplémentaires.</p>
+             </section>
+            <!-- les bonus -->
+            <section>
+                <h2>Les bonus</h2>
+                <p>Un aspect qui très important dans le jeu est la présence de 2 bonus. Ces bonus se rapportent tous les deux à la zone de pièce supplémentaire :</p>
                 <ul>
-                    <li>Le robot doit être construit conformément aux spécifications techniques établies par l’organisation.</li>
-                    <li>Le robot doit être contrôlé à distance par les membres de l’équipe.</li>
-                    <li>Les équipes doivent respecter les limites de temps pour accomplir les tâches sur le terrain de jeu.</li>
-                    <li>Les équipes doivent respecter les règles de sécurité établies par l’organisation.</li>
+                    <li>Bonus de hauteur : L’équipe qui a la <u>tour de pièce la plus haute</u> se voit attribuer un bonus de <b>+60%</b>.</li>
+                    <li>Bonus de quantité : L’équipe qui a le <u>plus de pièces</u> dans la zone supplémentaireobtient un bonus de <b>+40%</b>.</li>
                 </ul>
+                
             </section>
         </div>
 

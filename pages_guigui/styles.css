@@ -13,6 +13,13 @@ body, html {
 section {
     margin-top: 50px;
 }
+.page {
+    background-color: #212121;
+  /*padding: 0px 15%;*/
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
 /* ==== NAV BAR ==== */
 
 nav {
@@ -88,6 +95,7 @@ nav {
     font-weight: 100;
     font-size: 2em;
 }
+
 
 /** ====================== 
          PAGE EQUIPE 
@@ -418,9 +426,70 @@ fill: white;
          PAGE EQUIPE 
     ====================**/
 
-.crc-page-content section{
+/* .crc-page-content section{
     padding: 0 15%;
+} */
+ .crc-page-content h2 {
+    text-transform: uppercase;
+    font-weight: 1000;
+ }
+.crc-page-content h3 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.3em;
+    color: rgb(219, 219, 219);
+ }
+ .crc-page-content p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: rgb(231, 230, 230);
+ }
+ .crc-page-content ul {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: rgb(231, 230, 230);
+ }
+
+.title-separator {
+  border: 4px solid transparent; /* Set a transparent border to reserve space */
+  border-width: 1px 0 1px 0;
+  border-image: linear-gradient(to right, transparent, rgb(255, 255, 255),transparent); /* Apply the gradient */
+  border-image-slice: 1;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
+.img-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-list img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 10px
+}
+.img-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.section-pieces img{
+    height: 150px;
+    width: auto;
+}
+
+
 
 
 
@@ -439,6 +508,12 @@ fill: white;
     .card-list .right-part div{
         display: none;
     }
+    .img-list {
+        flex-direction: column;
+    }
+    .section-pieces img{
+        height: 100px;
+        width: auto;
+    }
 
-    
 }
