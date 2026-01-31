@@ -83,19 +83,6 @@ body{
     }
 }
 
-h3{
-    font-family: "Courier";
-    color: #fff;
-    text-align: right;
-    margin-right: 50px;
-    text-shadow: 2px 2px 3px #000;
-}
-
-h3 a{
-    color: #fff;
-    text-decoration: none;
-}
-
 .allDoor{
     display: flex;
     flex-direction: row;
@@ -133,7 +120,21 @@ h3 a{
     right: 0%;
     top: 7%
 }
-
+@keyframes showContent {
+    0%{
+        opacity: 0;
+        background-size: 0;
+    }
+    99% {
+        opacity: 0;
+        background-size: 0;
+    }
+    100% {
+       opacity: 1;
+        background-size: auto;
+    }
+}
 .realContent{
     position: absolute;
+    animation: 2.5s ease-out 0s 1 showContent;
 }

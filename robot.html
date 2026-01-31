@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="robot.css">
     <link rel="icon" type="image/png" href="images/cachedImage log1.webp">
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const from = params.get("from");
+
+        if (zoom) {
+            document.documentElement.style.setProperty("--test", from);
+        }
+    </script>
+
 </head>
 
 <body>
