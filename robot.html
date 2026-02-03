@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bob le robot</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="robot.css">
     <link rel="icon" type="image/png" href="images/cachedImage log1.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 >
@@ -30,7 +30,10 @@
             
         </div>
       </div>
-
+<div id="language-switcher" class="lang-switch">
+  <button data-lang="fr">FR</button>
+  <button data-lang="en">EN</button>
+</div>
       <!-- ACTUALITÉS -->
       <div class="news-screen">
         <img id="newsImage" alt="Actualité">
@@ -88,75 +91,87 @@
 <main>
     <section>
             <div class="sections blanches valeurs-container"></div>
-            <h2  data-translate style="font-size: 50px;"> Le club de Robotique de Bois de Boulogne vous souhaite la bienvenue à bord !<br>
+            <h2  data-translate style="font-size: 50px;"> Bob dans sa forme olympique<br>
 </h2>
-            <p  data-translate style="font-size: 30px; text-align: center;"> Le club a dans son sein les meilleure talents du CÉGEP. </p>
+            <p  data-translate style="font-size: 30px; text-align: center;">L'équipe qui a travaillé sur Bob cette année 2025-2026 est fier de vous présenter son robot final. </p>
              <br>
     
-            <img src="images/image accuiel.jpg" alt="equipe" class="image-propos">
+            <img src="images/robot version finale.jpg" alt="Bob le robot" class="image-propos">
         </section>
 
 
         <section class="valeurs-section">
             <!-- Bloc 1 -->
             <div class="valeur-bloc inverse">
-                <img src="images/conne.jpg" alt="connes">
+                <img src="images/chasi2.png" alt="châssis">
                 <div class="valeur-texte">
-                    <h3>Les cônes sont partout</h3>
-                    <p> Votre première arrêt consiste à découvrir le chemin chargé de cônes oranges qu'on a dû parcourir pour arriver à la compétition CRC. On vous rassure, que nous avons eu du plaisir.
-
-                    </p>
+                    <h3 data-translate>Châssis </h3>
+                     <p data-translate> châssis constitue la base d’un robot fiable et performant. Le nôtre est entièrement boulonné afin d’assurer une structure à la fois droite, rigide et légère. Nous avons opté pour des roues omnidirectionnelles, ce qui permet une navigation fluide et précise sur un terrain plat. Les roues sont protégées par des profilés en aluminium 2020 et maintenues droites à leurs extrémités grâce à des roulements à billes, ce qui réduit les frottements et améliore la durabilité. Un espace a été réservé à l’arrière du châssis pour accueillir la batterie et le CRCStop, les rendant facilement accessibles pour des raisons de sécurité et de maintenance.</p>
                 </div>
             </div>
 
                 <!-- Bloc 2 -->
                 <div class="valeur-bloc">
-                  <img src="images/equipe.webp" alt="equipe">
+                  <img src="images/pince.jpeg" alt="pinces">
                   <div class="valeur-texte">
-                    <h3>Découvrez l'équipe !</h3>
-                    <p> L'équipe de robotique de Bois de Boulogne est composée d'étudiants passionnés de robotique et de technologie, ont travaillé fort cette année 2025-2026 pour vous offrir le meilleure spectacle.</p>
+                    <h3 data-translate>Pinces </h3>
+                    <p data-translate> Cette année, nos pinces utilisent un système de pignon et crémaillère afin de maximiser la force de prise. Elles sont actionnées par des servomoteurs, ce qui permet de réduire la masse totale présente sur le bras. Pour améliorer l’adhérence sur les objets manipulés, nous utilisons de l’Alien Tape™, qui constitue notre solution clé pour éviter les glissements. Les pinces sont positionnées aux extrémités opposées du bras, assurant un contrepoids constant lors de la rotation du bras sur lui-même. De plus, elles sont orientées à 90° l’une de l’autre, ce qui permet d’attraper efficacement les bobines, qu’elles soient debout ou à plat, selon leur profil. </p>
+                    <p data-translate> Avantage : Avec seulement 4 points de contact, la prise est plus constante, peu importe la position initiale de la GP. <br> 
+
+Désavantage : On arrive à la date limite de la remise du site web. Si vous voulez en savoir plus, n’hésitez pas à passer nous voir durant la compétition ! </p>
                   </div>
                 </div>
               
                 <!-- Bloc 3 -->
                 <div class="valeur-bloc inverse">
-                  <img src="images/robot1.jpg" alt="robot">
+              
                   <div class="valeur-texte">
-                    <h3>Le bolide du siècle</h3>
-                    <p> Bob est le bolide de Émilien ne vous fiez pas à l'apparence, il va faire mordre la poussière à ses compétiteurs. il est venue pour gagner.</p>
+                    <h3>Bras </h3>
+                    <p data-translate> Le bras du robot est constitué d’une extrusion en aluminium capable de tourner sur lui-même à l’aide d’un moteur. L’axe central qui le supporte traverse deux roulements à billes, ce qui permet de minimiser le jeu mécanique tout en maximisant la solidité et la stabilité du système lors des mouvements rapides ou sous charge. </p>
                   </div>
                 </div>
               
                 <!-- Bloc 4 -->
                 <div class="valeur-bloc">
-                  <img src="images/CRC-Robotics.jpg" alt="CRC">
+                  
                   <div class="valeur-texte">
-                    <h3> En route vers le CRC</h3>
-                    <p> À la suivante station  Découvrez le monde magique du CRC et de sa compétition.</p>
+                    <h3 data-translate> Ascenseur </h3>
+                    <p data-translate> L’ascenseur permet le déplacement vertical du bras à l’aide d’un système de chaîne et de roues dentées. Le choix d’une chaîne, plutôt qu’une courroie, permet d’éviter les problèmes de retensionnement liés à la fatigue du matériau. À la base de l’ascenseur se trouve un interrupteur de position servant à calibrer la position initiale du bras. Ce dispositif empêche le pilote de déplacer le bras au-delà de ses limites mécaniques, réduisant ainsi les risques de bris lors de l’opération. </p>
                   </div>
                 </div>
-              </section>    <br> <br> <br> <br>          
+                <h1 class="titre-secondaire">Obstacles/solutions </h1>
+                <!-- Bloc 5 -->
+            <div class="valeur-bloc inverse">
+                <img src="images/difficulte soulution3.jpg" alt="difficulté">
+                <div class="valeur-texte">
+                    <h3 data-translate>Axe difficile à fixer au bras  </h3>
+                     <p data-translate> Nous avions de la difficulté à fixer solidement le bras à son axe, ce qui causait une rotation indésirable autour de celui-ci. Pour résoudre ce problème, nous avons modifié l’axe afin de lui donner une forme de D-shaft, améliorant ainsi la transmission du couple et l’adhérence mécanique.</p>
+                </div>
+            </div>
+            <!-- Bloc 6 -->
+                <div class="valeur-bloc">
+                  <img src="images/difficulte soulution1.jpg" alt="difficulté">
+                  <div class="valeur-texte">
+                    <h3data-translate>Axe de moteur plié  </h3>
+                    <p data-translate> À la suite d’une chute accidentelle du robot depuis sa station de réparation (deux tabourets), un axe de moteur s’est plié. Grâce à un étau, un peu d’huile de coude et beaucoup d’ingéniosité, nous avons pu redresser l’axe et remettre le moteur en état de fonctionnement. Résultat : +100$ ! </p>
+                  </div>
+                </div>
+                
+                <!-- Bloc 7 -->
+            <div class="valeur-bloc inverse">
+                <img src="images/difficulte soulution2jpg.jpg" alt="difficulté">
+                <div class="valeur-texte">
+                    <h3 data-translate>Force de prise insuffisante des pinces   </h3>
+            <p data-translate>Depuis la compétition de l’an dernier, notre équipe éprouve des difficultés à obtenir une force de prise suffisante. Cette année, le problème était amplifié par la masse des bobines et l’amplitude des mouvements requis. Nous avons donc abandonné les pinces directement attachées à un servomoteur et opté pour un système de transformation du mouvement par pignon et crémaillère. Cette solution permet d’échanger de la vitesse contre de la force, ce qui s’est avéré particulièrement efficace et rentable pour notre application. </p>
+                </div>
+            </div>
+              </section>        
 
 
 
 
 
-        <section class="video-section">
-  <h3 class="video-title">Une ébauche de vidéo</h3>
-
-  <div class="video-container">
-    <video
-      id="localVideo"
-      controls
-      autoplay
-      muted
-      loop
-      playsinline
-    >
-      <source src="video/board robotique.mp4" type="video/mp4">
-    </video>
-  </div>
-</section>
+        
 
             
 
@@ -171,7 +186,7 @@
             <!-- Gauche -->
             <div class="footer-left">
                 <a href="Accueil.html"><img src="images/cachedImage log1.webp" alt="Logo Robotique BdeB" class="footer-logo"></a>
-                <p class="footer-copy">© 2025 Robotique BdeB</p>
+                <p data-translate class="footer-copy">© 2025 Robotique BdeB</p>
             </div>
 
             
@@ -180,14 +195,11 @@
             <!-- Droite -->
             <div class="footer-right">
                 <div class="footer-links">
-                    <a href="#">Vie privée</a>
+                    <a href="#"data-translate>Vie privée</a>
                     <span> | </span>
-                    <a href="#">Conditions</a>
+                    <a href="#"data-translate>Conditions</a>
                 </div>
-                <div id="language-switcher" class="lang-switch">
-  <button data-lang="fr">FR</button>
-  <button data-lang="en">EN</button>
-</div>
+                
 
             
 
