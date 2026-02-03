@@ -643,12 +643,14 @@ section {
     margin-top: 50px;
 }
 .page {
-    background-color: #222222d5;
+    background-color: #222222c1;
   /*padding: 0px 15%;*/
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
+    padding-bottom: 40px;
+    border-radius: 0px 0px 50px 50px ;
 }
 /* ==== PAGE NAME ==== */
 
@@ -698,7 +700,7 @@ section {
 }
 
 .options button{
-    background-color: #313131;
+    background-color: #313131ae;
     stroke-width: 0;
     border: 0;
     border-radius: 0px 0px 10px 10px;
@@ -709,13 +711,13 @@ section {
 }
 
 .options button:hover{
-    background-color: #272727;
+    background-color: #272727cc;
     cursor: pointer;
     backdrop-filter: blur(5px);
 }
 
 .options button.active{
-    background-color: #1E1E1E;
+    background-color: #1e1e1edd;
     pointer-events: none;
 }
 
@@ -1019,7 +1021,6 @@ fill: white;
 
 .crc-page-content {
     padding-top: 40px;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -1058,7 +1059,7 @@ fill: white;
     flex-direction: column;
     width: 100%;
     padding: 10px;
-    background-color: rgb(48, 48, 48);
+    background-color: rgba(48, 48, 48, 0.47);
     border-radius: 20px;
     justify-content: center;
     align-items: center;
