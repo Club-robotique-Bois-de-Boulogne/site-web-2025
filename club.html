@@ -12,77 +12,53 @@
 <body>
 
 <header class="sticky-header">
-    <div class="top-row">
+  <div class="top-row">
 
-        <!-- ZONE À CACHER AU SCROLL -->
-        <div class="header-hide-zone">
+        
+    <div id="language-switcher" class="lang-switch">
+        <button data-lang="fr">FR</button>
+        <button data-lang="en">EN</button>
+    </div>
+    <!-- MENU TOUJOURS VISIBLE -->
+    <div class="menu-wrapper">
+      <div class="cylinder">
+        <a href="index.html" data-translate class="dot"></a>
+        <a href="club.html" data-translate class="dot active"></a>
+        <a href="equipe.html" data-translate class="dot"></a>
+        <a href="robot.html" data-translate class="dot"></a>
+        <a href="crc.html" data-translate class="dot"></a>
+        <a href="video.html" data-translate class="dot"></a>
+      </div>
 
-            <!-- PANNEAU GAUCHE -->
-            <div class="side-panel">
-                <div id="clock" class="clock">00 h 00</div>
+      <div class="labels icons">
+  <a href="index.html" title="Accueil">
+    <i class="fa-solid fa-house"></i>
+  </a>
 
-                <div class="station-card">
-                    <img id="stationImage" src="" alt="Station">
-                    <div class="station-name" id="stationName" data-translate></div>
+  <a href="club.html" title="Club">
+    <i class="fa-solid fa-users"></i>
+  </a>
 
+  <a href="equipe.html" title="Équipe">
+    <i class="fa-solid fa-user-group"></i>
+  </a>
 
-                </div>
-            </div>
-            <div id="language-switcher" class="lang-switch">
-                <button data-lang="fr">FR</button>
-                <button data-lang="en">EN</button>
-            </div>
-            <!-- ACTUALITÉS -->
-            <div class="news-screen">
-                <img id="newsImage" alt="Actualité">
-                <div class="news-overlay">
-                    <div class="news-title" id="newsTitle"></div>
-                    <div class="news-date" id="newsDate"></div>
-                </div>
-            </div>
+  <a href="robot.html" title="Bob le Robot">
+    <i class="fa-solid fa-robot"></i>
+  </a>
 
-        </div>
+  <a href="crc.html" title="compétition CRC">
+    <i class="fa-solid fa-microchip"></i>
+  </a>
 
-        <!-- MENU TOUJOURS VISIBLE -->
-        <div class="menu-wrapper">
-            <div class="cylinder">
-                <a href="index.html" data-translate class="dot active"></a>
-                <a href="club.html" data-translate class="dot"></a>
-                <a href="equipe.html" data-translate class="dot"></a>
-                <a href="robot.html" data-translate class="dot"></a>
-                <a href="crc.html" data-translate class="dot"></a>
-                <a href="video.html" data-translate class="dot"></a>
-            </div>
-
-            <div class="labels icons">
-                <a href="index.html" title="Accueil">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-
-                <a href="club.html" title="Club">
-                    <i class="fa-solid fa-users"></i>
-                </a>
-
-                <a href="equipe.html" title="Équipe">
-                    <i class="fa-solid fa-user-group"></i>
-                </a>
-
-                <a href="robot.html" title="Bob le Robot">
-                    <i class="fa-solid fa-robot"></i>
-                </a>
-
-                <a href="crc.html" title="compétition CRC">
-                    <i class="fa-solid fa-microchip"></i>
-                </a>
-
-                <a href="video.html" title="Vidéo">
-                    <i class="fa-solid fa-video"></i>
-                </a>
-            </div>
-
-        </div>
+  <a href="video.html" title="Vidéo">
+    <i class="fa-solid fa-video"></i>
+  </a>
+</div>
 
     </div>
+
+  </div>
 </header>
 
 
