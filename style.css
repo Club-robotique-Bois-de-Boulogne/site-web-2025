@@ -1,3 +1,25 @@
+.btn-translate {
+    padding: 10px 22px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-translate:hover {
+    background: #1565c0;
+    transform: translateY(-2px);
+}
+
+.btn-translate:active {
+    background: #0d47a1;
+    transform: translateY(1px);
+}
+
 * {
     box-sizing: border-box;
 }

@@ -407,7 +407,20 @@
             "Terms",
 
         "© 2025 Robotique BdeB":
-            "© 2025 BdeB Robotics"
+            "© 2025 BdeB Robotics",
+        "L'équipe de robotique de Bois-de-Boulogne est composée d'étudiants passionnés de robotique et de technologie. Ils ont travaillé fort cette année 2025-2026 pour vous offrir le meilleure spectacle.":"The Bois-de-Boulogne robotics team is made up of students who are passionate about robotics and technology. They worked hard during the 2025–2026 year to offer you the best show.",
+        "Bob est le bolide d'Émilien, ne vous fiez pas à l'apparence, il va faire mordre la poussière à ses compétiteurs. Son robotest venu pour gagner.":"Bob is a powerful racer. Don’t be fooled by its appearance — it’s going to leave its competitors in the dust. This robot is here to win.",
+        "L'équipe espère que vous avez eu un beau voyage et nous espèrons que vous allez continuer à rêver grand ! ! !":"The team hopes you had a wonderful trip, and we hope you’ll continue to dream big!",
+        "Le tutoriel explique comment imprimer des pièces 3D qui ne se casseront (presque) jamais. Cela est particulièrement nécessaire pour la CRC, où les robots sont soumis à un stress constant. Il aborde en profondeur presque toutes les raisons qui peuvent affaiblir les pièces imprimées en 3D et transmet ces informations avec un mélange d’humour et de pédagogie. Le tutoriel est réalisé entièrement sur After Effects et DaVinci Resolve, et a été enregistré sur Fusion, Qidi Slicer, ainsi qu’en conditions réelles.":"The tutorial explains how to print 3D pieces that will almost or never break. It is particularly useful in the context of the CRC competition where 3D parts on the robot are subjected to a constant, and great stress. The tutorial also covers most of the flaws of 3D printing that make a printed piece less resistant. All that information is conveyed with a mix of humor, and pedagogy. Finally, it has been completely created on After Effects, and Davinci Resolve. It has been recorded on Fusion, Qidi Slicer, and in real conditions",
+        "Malgré les nombreux travaux entrepris dans le collège et le fait que l'administration ne sache pas ou mettre les étudiant(e)s, le club a hérité d'un nouveau local. Nous sommes content(e)s de cette acquisition.":"Despite the many construction projects underway at the college and the administration not knowing where to place the students, the club ended up with a new room. We’re happy with this new space.",
+        "Ce kiosque était une vraies joke. On a dû le démonter et le remonter plusieurs fois. la première fois parce que c'était le thème de l'année passée et nous devions vérifier les dimensions. En remontant le kiosque, on a découvert que les morceaux de mdf n'étaient pas réutilisables. Martin et ses coéquipiers sont donc allés chercher des planches de remplacement. On a dû démonter et remonter le kiosque une fois de plus. Le projet a été un vrai casse-tête, mais l'équipe a réussi à le terminer à temps.":"This booth was a real joke. We had to take it apart and rebuild it several times. The first time was because it used last year’s theme, and we needed to check the dimensions. While putting the booth back together, we discovered that the MDF pieces couldn’t be reused. Martin and his teammates went to get replacement boards. Then we had to take the booth apart and rebuild it once again. The project was a real puzzle, but the team managed to finish it on time.",
+        "pleusieur versions pour Bob":"Multiple version of Bob",
+        "Cette année Bob a connu deux versions différentes. La première version était une version de base, et la deuxième version a été améliorée avec des fonctionnalités supplémentaires il a eu des problémes de moteur et d'équilibre mais l'équipe a réussi à les corrigers.": "This year, Bob went through two different versions. The first one was a basic model, and the second was upgraded with additional features He had some motor and balance issues, but the team managed to fix them.",
+        "Les cônes sont partout":"The cones are everywhere.",
+        "Votre première arrêt consiste à découvrir le chemin chargé de cônes oranges qu'on a dû parcourir pour arriver à la compétition CRC. On vous rassure, que nous avons eu du plaisir.":"Your first stop is to discover the cone‑filled path we had to navigate to get to the CRC competition. Don’t worry — we still had fun along the way.",
+        "Découvrez l'équipe !":"Discover the team",
+        "L'équipe de robotique de Bois de Boulogne est composée d'étudiants passionnés de robotique et de technologie, ont travaillé fort cette année 2025-2026 pour vous offrir le meilleure spectacle":"The Bois‑de‑Boulogne robotics team is made up of students who are passionate about robotics and technology, and they worked hard this 2025–2026 year to offer you the best show.",
+        "Bob est le bolide de Émilien ne vous fiez pas à l'apparence, il va faire mordre la poussière à ses compétiteurs. il est venue pour gagner.":"Bob is Émilien’s racer. Don’t be fooled by its appearance — it’s going to leave its competitors in the dust. It came here to win."
     };
 
 
@@ -450,6 +463,7 @@
 
         document.querySelectorAll("#language-switcher button").forEach(btn => {
             btn.addEventListener("click", () => {
+                console.log(btn.dataset.lang)
                 setLanguage(btn.dataset.lang);
             });
         });
