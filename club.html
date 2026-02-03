@@ -2,179 +2,193 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/cachedImage log1.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
->
+
+
+    >
 
 </head>
 
 <body>
 
 <header class="sticky-header">
-  <div class="top-row">
+    <div class="top-row">
 
-    <!-- ZONE À CACHER AU SCROLL -->
-    <div class="header-hide-zone">
+        <!-- ZONE À CACHER AU SCROLL -->
+        <div class="header-hide-zone">
 
-      <!-- PANNEAU GAUCHE -->
-      <div class="side-panel">
-        <div id="clock" class="clock">00 h 00</div>
+            <!-- PANNEAU GAUCHE -->
+            <div class="side-panel">
+                <div id="clock" class="clock">00 h 00</div>
 
-        <div class="station-card">
-          <img id="stationImage" src="" alt="Station">
-          <div class="station-name" id="stationName" data-translate></div>
+                <div class="station-card">
+                    <img id="stationImage" src="" alt="Station">
+                    <div class="station-name" id="stationName" data-translate></div>
 
-            
+
+                </div>
+            </div>
+            <div id="language-switcher" class="lang-switch">
+                <button data-lang="fr">FR</button>
+                <button data-lang="en">EN</button>
+            </div>
+            <!-- ACTUALITÉS -->
+            <div class="news-screen">
+                <img id="newsImage" alt="Actualité">
+                <div class="news-overlay">
+                    <div class="news-title" id="newsTitle"></div>
+                    <div class="news-date" id="newsDate"></div>
+                </div>
+            </div>
+
         </div>
-      </div>
 
-      <!-- ACTUALITÉS -->
-      <div class="news-screen">
-        <img id="newsImage" alt="Actualité">
-        <div class="news-overlay">
-          <div class="news-title" id="newsTitle"></div>
-          <div class="news-date" id="newsDate"></div>
+        <!-- MENU TOUJOURS VISIBLE -->
+        <div class="menu-wrapper">
+            <div class="cylinder">
+                <a href="accueil.html" data-translate class="dot active"></a>
+                <a href="club.html" data-translate class="dot"></a>
+                <a href="equipe.html" data-translate class="dot"></a>
+                <a href="robot.html" data-translate class="dot"></a>
+                <a href="crc.html" data-translate class="dot"></a>
+                <a href="video.html" data-translate class="dot"></a>
+            </div>
+
+            <div class="labels icons">
+                <a href="accueil.html" title="Accueil">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+                <a href="club.html" title="Club">
+                    <i class="fa-solid fa-users"></i>
+                </a>
+
+                <a href="equipe.html" title="Équipe">
+                    <i class="fa-solid fa-user-group"></i>
+                </a>
+
+                <a href="robot.html" title="Bob le Robot">
+                    <i class="fa-solid fa-robot"></i>
+                </a>
+
+                <a href="crc.html" title="compétition CRC">
+                    <i class="fa-solid fa-microchip"></i>
+                </a>
+
+                <a href="video.html" title="Vidéo">
+                    <i class="fa-solid fa-video"></i>
+                </a>
+            </div>
+
         </div>
-      </div>
 
     </div>
-
-    <!-- MENU TOUJOURS VISIBLE -->
-    <div class="menu-wrapper">
-      <div class="cylinder">
-        <a href="accueil.html" data-translate class="dot active"></a>
-        <a href="club.html" data-translate class="dot"></a>
-        <a href="equipe.html" data-translate class="dot"></a>
-        <a href="robot.html" data-translate class="dot"></a>
-        <a href="crc.html" data-translate class="dot"></a>
-        <a href="video.html" data-translate class="dot"></a>
-      </div>
-
-      <div class="labels icons">
-  <a href="accueil.html" title="Accueil">
-    <i class="fa-solid fa-house"></i>
-  </a>
-
-  <a href="club.html" title="Club">
-    <i class="fa-solid fa-users"></i>
-  </a>
-
-  <a href="equipe.html" title="Équipe">
-    <i class="fa-solid fa-user-group"></i>
-  </a>
-
-  <a href="robot.html" title="Bob le Robot">
-    <i class="fa-solid fa-robot"></i>
-  </a>
-
-  <a href="crc.html" title="compétition CRC">
-    <i class="fa-solid fa-microchip"></i>
-  </a>
-
-  <a href="video.html" title="Vidéo">
-    <i class="fa-solid fa-video"></i>
-  </a>
-</div>
-
-    </div>
-
-  </div>
 </header>
 
 
 <main>
     <section>
-            <div class="sections blanches valeurs-container"></div>
-            <h2  data-translate style="font-size: 50px;"> Nouvelle année, nouveau locaux ! <br>
-                </h2>
-            <p  data-translate style="font-size: 30px; text-align: center;"> Malgré les nombreux travaux entrepris dans le collège et le fait que l'administration ne sache pas ou mettre les étudiant(e)s, le club a hérité d'un nouveau local. Nous sommes content(e)s de cette acquisition. </p>
-                 <br>
-            <img src="images/penture.webp" alt="penture" class="image-propos">
-        </section>
+        <div class="sections blanches valeurs-container"></div>
+        <h2  data-translate style="font-size: 50px;"> Nouvelle année, nouveau locaux ! <br>
+        </h2>
+        <p  data-translate style="font-size: 30px; text-align: center;"> Malgré les nombreux travaux entrepris dans le collège et le fait que l'administration ne sache pas ou mettre les étudiant(e)s, le club a hérité d'un nouveau local. Nous sommes content(e)s de cette acquisition. </p>
+        <br>
+        <img src="images/penture.webp" alt="penture" class="image-propos">
+    </section>
 
 
-        <section class="valeurs-section">
-            <!-- Bloc 1 -->
-            <div class="valeur-bloc inverse">
-                <img src="images/impriment 3d.jpg" alt="imprimante 3D">
-                <div class="valeur-texte">
-                    <h3>La Nouvelle Acquisiton </h3>
-                    <p> Le Pére Noël nous a livré notre cadeau en avant cette année. Au mois d'octobre, nous avons reçu notre commande: l'Original Prusa Core One Kit d'imprimante 3D. <br> L'équipe se sert de cette imprimante pour créer des objets et des prototype pour le robot et pour le kiosques</p>
+    <section class="valeurs-section">
+        <!-- Bloc 1 -->
+        <div class="valeur-bloc inverse">
+            <img src="images/impriment 3d.jpg" alt="imprimante 3D">
+            <div class="valeur-texte">
+                <h3 data-translate >La Nouvelle Acquisiton </h3>
+                <p data-translate> Le Pére Noël nous a livré notre cadeau en avant cette année. Au mois d'octobre, nous avons reçu notre commande: l'Original Prusa Core One Kit d'imprimante 3D. <br> L'équipe se sert de cette imprimante pour créer des objets et des prototype pour le robot et pour le kiosques</p>
+            </div>
+        </div>
+
+        <!-- Bloc 2 -->
+        <div class="valeur-bloc">
+            <img src="images/plan kiosque.webp" alt="plan kiosque">
+            <div class="valeur-texte">
+                <h3 data-translate >Un plan pour un kiosque et un thème  pas si évident que ça à trouver </h3>
+                <p data-translate> En septembre, l'équipe s'est mise à la recherche d'un thème pour la compétition. Cela a été un défi, car qu'il y avait les thèmes qui ont fait débat: le métro de Montréal, le petit Prince et Charlie Chaplin. <br> <br> Toutefois, si vous ne l'avez pas encore compris le thème victorieux est le métro de Montréal. Le kiosque aura l'allure d'un quai de station et renfermera quelque surprises à l'intérieur.</p>
+            </div>
+        </div>
+
+        <!-- Bloc 3 -->
+        <div class="valeur-bloc inverse">
+            <img src="images/planches.webp" alt="planches de bois">
+            <div class="valeur-texte">
+                <h3 data-translate>Martin et ses bricoleurs</h3>
+                <p data-translate>Ce kiosque était une vraies joke. On a dû le démonter et le remonter plusieurs fois. la première fois parce que c'était le thème de l'année passée et nous devions vérifier les dimensions. <br> En remontant le kiosque, on a découvert que les morceaux de mdf n'étaient pas réutilisables. Martin et ses coéquipiers sont donc allés chercher des planches de remplacement. On a dû démonter et remonter le kiosque une fois de plus. <br> Le projet a été un vrai casse-tête, mais l'équipe a réussi à le terminer à temps.</p>
+            </div>
+        </div>
+
+        <!-- Bloc 4 -->
+        <div class="valeur-bloc">
+            <img src="images/robot1.webp" alt="robot">
+            <div class="valeur-texte">
+                <h3 data-translate >pleusieur versions pour Bob</h3>
+                <p data-translate> Cette année Bob a connu deux versions différentes. La première version était une version de base, et la deuxième version a été améliorée avec des fonctionnalités supplémentaires. <br> il a eu des problémes de moteur et d'équilibre mais l'équipe a réussi à les corrigers.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="youtube-section">
+        <h2  data-translate class="section-title">Nos vidéos</h2>
+
+        <div class="youtube-grid">
+
+            <!-- VIDEO 1 -->
+            <div class="youtube-card">
+                <h3 data-translate class="video-title">Les pas de super Bob !!</h3>
+
+                <div class="video-wrapper">
+                    <iframe
+                            src="https://www.youtube.com/embed/ACT6B_EbZv8?si=xOv1F60IOSzdNQhz"
+                            title="premier pas de Bob"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
                 </div>
+
+                <p  data-translate class="video-description">
+                    Jules qui fait ses premiers pas à Bob.
+                </p>
             </div>
 
-                <!-- Bloc 2 -->
-                <div class="valeur-bloc">
-                  <img src="images/plan kiosque.webp" alt="plan kiosque">
-                  <div class="valeur-texte">
-                    <h3>Un plan pour un kiosque et un thème  pas si évident que ça à trouver </h3>
-                    <p> En septembre, l'équipe s'est mise à la recherche d'un thème pour la compétition. Cela a été un défi, car qu'il y avait les thèmes qui ont fait débat: le métro de Montréal, le petit Prince et Charlie Chaplin. <br> <br> Toutefois, si vous ne l'avez pas encore compris le thème victorieux est le métro de Montréal. Le kiosque aura l'allure d'un quai de station et renfermera quelque surprises à l'intérieur.</p>
-                  </div>
+            <!-- VIDEO 2 -->
+            <div class="youtube-card">
+                <h3  data-translate class="video-title">Émilien teste le bras du robot</h3>
+
+                <div class="video-wrapper">
+                    <iframe width="337" height="599" src="https://www.youtube.com/embed/eojOge0m_98" title="fin bob" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-              
-                <!-- Bloc 3 -->
-                <div class="valeur-bloc inverse">
-                  <img src="images/planches.webp" alt="planches de bois">
-                  <div class="valeur-texte">
-                    <h3>Martin et ses bricoleurs</h3>
-                    <p> Ce kiosque était une vraies joke. On a dû le démonter et le remonter plusieurs fois. la première fois parce que c'était le thème de l'année passée et nous devions vérifier les dimensions. <br> En remontant le kiosque, on a découvert que les morceaux de mdf n'étaient pas réutilisables. Martin et ses coéquipiers sont donc allés chercher des planches de remplacement. On a dû démonter et remonter le kiosque une fois de plus. <br> Le projet a été un vrai casse-tête, mais l'équipe a réussi à le terminer à temps.</p>
-                  </div>
-                </div>
-              
-                <!-- Bloc 4 -->
-                <div class="valeur-bloc">
-                  <img src="images/robot1.webp" alt="robot">
-                  <div class="valeur-texte">
-                    <h3>2 versions pour Bob</h3>
-                    <p> Cette année Bob a connu deux versions différentes. La première version était une version de base, et la deuxième version a été améliorée avec des fonctionnalités supplémentaires. <br> il a eu des problémes de moteur et d'équilibre mais l'équipe a réussi à les corrigers.</p>
-                  </div>
-                </div>
-              </section>              
 
+                <p  data-translate class="video-description">
+                    Émilien teste le bras du robot avant la compétition. Une version avec beaucoup d'espoir qui n'aboutira pas.
+                </p>
 
- 
+            </div>
 
+        </div>
+    </section>
 
-        <section class="video-section">
-  <h3 class="video-title">premier pas de Bob</h3>
-
-  <div class="video-container">
-    <video
-      id="localVideo"
-      controls
-      autoplay
-      muted
-      loop
-      playsinline
-    >
-      <source src="video/premiere pas bob.mov" type="video/mp4">
-    </video>
-  </div>
-</section>
-
-  <section class="video-section">
-  <h3 class="video-title">Un Bob vers la fin</h3>
-
-  <div class="video-container">
-    <video
-      id="localVideo"
-      controls
-      autoplay
-      muted
-      loop
-      playsinline
-    >
-      <source src="video/fin-bob.mov" type="video/mp4">
-    </video>
-  </div>
-</section>
 
 </main>
 
 <footer>
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
 
         <!-- Bas du footer -->
@@ -182,45 +196,42 @@
             <!-- Gauche -->
             <div class="footer-left">
                 <a href="Accueil.html"><img src="images/cachedImage log1.webp" alt="Logo Robotique BdeB" class="footer-logo"></a>
-                <p class="footer-copy">© 2025 Robotique BdeB</p>
+                <p  data-translate class="footer-copy">© 2025 Robotique BdeB</p>
             </div>
 
-            
+
 
 
             <!-- Droite -->
             <div class="footer-right">
                 <div class="footer-links">
-                    <a href="#">Vie privée</a>
+                    <a href="#" data-translate>Vie privée</a>
                     <span> | </span>
-                    <a href="#">Conditions</a>
+                    <a href="#" data-translate>Conditions</a>
                 </div>
-                <div id="language-switcher" class="lang-switch">
-  <button data-lang="fr">FR</button>
-  <button data-lang="en">EN</button>
-</div>
 
-            
 
-                
+
+
+
             </div>
         </div>
-</footer>
+    </footer>
 
-<script>
-window.addEventListener("scroll", function () {
-    const header = document.querySelector(".sticky-header");
-    if (window.scrollY > 10) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-</script>
-<audio id="navSound" preload="auto">
-  <source src="son metro/son metro.mp4" type="audio/mpeg">
-</audio>
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".sticky-header");
+            if (window.scrollY > 10) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+    <audio id="navSound" preload="auto">
+        <source src="son metro/son metro.mp4" type="audio/mpeg">
+    </audio>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
