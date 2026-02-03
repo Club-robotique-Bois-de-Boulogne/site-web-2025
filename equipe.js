@@ -116,7 +116,7 @@ function updateCardInfo(member){
     const img = card_info.querySelector('img');
     img.src = getImageSrcFromMember(member);
     img.onerror = () => {
-        img.src = "./src/images/team/default.png";
+        img.src = "./images/team/default.png";
         img.onerror = null;
     }
     card_info.querySelector('h2').textContent = member.prénom + " " + member.nom;
@@ -151,7 +151,7 @@ async function init() {
         const image = document.createElement('img');
         image.src = getImageSrcFromMember(member);
         image.onerror = function() {
-        this.src = "./src/images/team/default.png";
+        this.src = "./images/team/default.png";
         this.onerror = null; // Empêche une boucle infinie si default.png manque aussi
         };
 
@@ -219,7 +219,7 @@ function getImageSrcFromMember(member) {
     const prenomNormalized = prenom.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     const premierLettreNomNormalized = premierLettreNom.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     
-    const folder = "./src/images/team/";
+    const folder = "./images/team/";
     return `${folder}${prenomNormalized}${premierLettreNomNormalized}.webp`;
 }
 
