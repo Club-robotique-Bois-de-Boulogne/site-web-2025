@@ -10,51 +10,66 @@
     <title>CRC</title>
 </head>
 <body>
+
+
     <header class="sticky-header">
-  <div class="top-row">
+    <div class="top-row">
+
+        <!-- ZONE À CACHER AU SCROLL -->
+        <div class="header-hide-zone">
+
+            <!-- PANNEAU GAUCHE -->
+            <div id="language-switcher" class="lang-switch">
+                <button data-lang="fr">FR</button>
+                <button data-lang="en">EN</button>
+            </div>
+        </div>
 
 
-    <!-- MENU TOUJOURS VISIBLE -->
-    <div class="menu-wrapper">
-      <div class="cylinder">
-        <a href="accueil.html" data-translate class="dot"></a>
-        <a href="club.html" data-translate class="dot"></a>
-        <a href="equipe.html" data-translate class="dot"></a>
-        <a href="robot.html" data-translate class="dot"></a>
-        <a href="crc.html" data-translate class="dot active"></a>
-        <a href="video.html" data-translate class="dot"></a>
-      </div>
+        <!-- MENU TOUJOURS VISIBLE -->
+        <div class="menu-wrapper">
+            <div class="cylinder">
+                <a href="accueil.html" data-translate class="dot active"></a>
+                <a href="club.html" data-translate class="dot"></a>
+                <a href="equipe.html" data-translate class="dot"></a>
+                <a href="robot.html" data-translate class="dot"></a>
+                <a href="crc.html" data-translate class="dot"></a>
+                <a href="video.html" data-translate class="dot"></a>
+            </div>
 
-      <div class="labels icons">
-  <a href="accueil.html" title="Accueil">
-    <i class="fa-solid fa-house"></i>
-  </a>
+            <div class="labels icons">
+                <a href="accueil.html" title="Accueil">
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
-  <a href="club.html" title="Club">
-    <i class="fa-solid fa-users"></i>
-  </a>
+                <a href="club.html" title="Club">
+                    <i class="fa-solid fa-users"></i>
+                </a>
 
-  <a href="equipe.html" title="Équipe">
-    <i class="fa-solid fa-user-group"></i>
-  </a>
+                <a href="equipe.html" title="Équipe">
+                    <i class="fa-solid fa-user-group"></i>
+                </a>
 
-  <a href="robot.html" title="Bob le Robot">
-    <i class="fa-solid fa-robot"></i>
-  </a>
+                <a href="robot.html" title="Bob le Robot">
+                    <i class="fa-solid fa-robot"></i>
+                </a>
 
-  <a href="crc.html" title="compétition CRC">
-    <i class="fa-solid fa-microchip"></i>
-  </a>
+                <a href="crc.html" title="compétition CRC">
+                    <i class="fa-solid fa-microchip"></i>
+                </a>
 
-  <a href="video.html" title="Vidéo">
-    <i class="fa-solid fa-video"></i>
-  </a>
-</div>
+                <a href="video.html" title="Vidéo">
+                    <i class="fa-solid fa-video"></i>
+                </a>
+
+            </div>
+
+
+        </div>
 
     </div>
-
-  </div>
 </header>
+
     <div class="page-name">
         <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
             <circle class="circle" r="20" cx="50" cy="50"/>
@@ -172,5 +187,6 @@
 
 </body>
 <script src="equipe.js"></script>
+<script src="script.js"></script>
 
 </html>
