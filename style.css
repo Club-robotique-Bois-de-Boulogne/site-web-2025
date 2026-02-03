@@ -276,7 +276,7 @@ header.sticky-header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #b99169;
+    background-color: #b99169;;
 
     width: fit-content;
 
@@ -575,7 +575,7 @@ h1, h2, h3, h4, h5, h6 {
 .sticky-header.scrolled .header-hide-zone {
   opacity: 0;
   transform: translateY(-20px);
-  pointer-events: none;
+
   max-height: 0;
   overflow: hidden;
   display: none;
@@ -622,7 +622,7 @@ section {
     margin-top: 50px;
 }
 .page {
-    background-color: #212121;
+    background-color: #2121214b;
   /*padding: 0px 15%;*/
     justify-content: center;
     align-items: center;
@@ -651,13 +651,12 @@ section {
          PAGE EQUIPE 
     ====================**/
 /* ==== GLOBAL ==== */
-.teamp-page-content{
-  background-color: #212121;
+.team-page-content{
+  background-color: #21212185;
   /*padding: 0px 15%;*/
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    
 }
 .wrapper{
     padding: 0px 15%;
@@ -993,6 +992,19 @@ fill: white;
     color: rgb(231, 230, 230);
  }
 
+.crc-page-content {
+    padding-top: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-pieces .img-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 .title-separator {
   border: 4px solid transparent; /* Set a transparent border to reserve space */
   border-width: 1px 0 1px 0;
@@ -1074,11 +1086,11 @@ section {
     margin-top: 50px;
 }
 .page {
-    background-color: #212121;
+  background-color: #212121;
   /*padding: 0px 15%;*/
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
 }
 /* ==== NAV BAR ==== */
 
@@ -1132,7 +1144,7 @@ nav {
 /* ==== PAGE NAME ==== */
 
 .page-name{
-    background-color: rgba(0, 0, 0, 0.541);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 60px;
     display: flex;
@@ -1476,12 +1488,17 @@ fill: white;
 }
 
 /** ====================== 
-         PAGE EQUIPE 
+         PAGE CRC 
     ====================**/
 
 /* .crc-page-content section{
     padding: 0 15%;
 } */
+.crc-page-content {
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
  .crc-page-content h2 {
     text-transform: uppercase;
     font-weight: 1000;
@@ -1541,9 +1558,6 @@ fill: white;
     height: 150px;
     width: auto;
 }
-
-
-
 
 
 /** ======================
