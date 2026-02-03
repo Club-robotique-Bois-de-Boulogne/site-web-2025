@@ -440,7 +440,23 @@
         "La Nouvelle Acquisiton":"New acquisition", 
         "Le Pére Noël nous a livré notre cadeau en avant cette année. Au mois d'octobre, nous avons reçu notre commande: l'Original Prusa Core One Kit d'imprimante 3D. L'équipe se sert de cette imprimante pour créer des objets et des prototype pour le robot et pour le kiosques":"Santa Claus delivered our gift in advance this year! In october, we recieved our order: The Original Prusa CORE One Kit 3D printer. The team uses the printer to create prototypes and objects for the robot and the booth", 
         "En septembre, l'équipe s'est mise à la recherche d'un thème pour la compétition. Cela a été un défi, car qu'il y avait les thèmes qui ont fait débat: le métro de Montréal, le petit Prince et Charlie Chaplin. Toutefois, si vous ne l'avez pas encore compris le thème victorieux est le métro de Montréal. Le kiosque aura l'allure d'un quai de station et renfermera quelque surprises à l'intérieur.": "In september, the team started looking for a theme for the competition. It was a challenge, because the different theme caused debate: Montreal’s metro, The Little Prince, and Charlie Chaplin., However, if you didn’t understand yet, the theme we settled on is Montreal’s metro. The kiosk will look like a metro platform and it will contain some surprises in it.", 
-        "La vidéo":"Video"
+        "La vidéo":"Video",
+        "Qu'est-ce que Robotique CRC":"What is CRC Robotics",
+        "La Robotique CRC est un organisme à but non lucratif fondé en 2001 par des enseignants et de jeunes professionnels passionnés. Sa mission est d'encourager l'interdisciplinarité à travers la robotique, en créant un pont entre les domaines STIM (science, technologie, ingénierie et mathématiques) et les arts, les langues et la communication.":" CRC Robotics is a non-profit organization founded in 2001 by teachers and young passionate professionals. Its mission is to encourage interdisciplinarity through robotics, creating a bridge between STEM fields (science, technology, engineering and mathematics) and the arts, languages and communication.",
+        "Qu'en est-il de la compétition":"What about the competition",
+        "La compétition de robotique CRC est un défi multidisciplinaire qui s'étend sur environ quatre mois. Durant cette période, les différentes écoles qui y participent doivent :":"The CRC robotics competition is a multidisciplinary challenge that lasts about four months. During this period, participating schools must:",
+        "Créer une vidéo":"Create a video",
+        "Monter un kiosque":"Build a booth",
+        "Faire un tutoriel":"Build a robot",
+        "Construire un robot":"Make a tutorial",
+        "L'aventure se termine par une finale de trois jours. Les différentes écoles se rassemblent pour affronter leur robot, présenter leur kiosque et participer à une compétition de programmation.":"Make a tutorial",
+        "LE JEU":"THE GAME",
+        "But du jeu":"Objective of the game",
+        "Le but du jeu est d’amasser le plus de points possible en accomplissant différentes tâches avec le robot sur le terrain de jeu. Chaque tâche réussie rapporte un certain nombre de points, et l’équipe avec le plus de points à la fin du match remporte la victoire.":"The goal of the game is to score as many points as possible by completing different tasks with the robot on the playing field. Each successful task earns a certain number of points, and the team with the most points at the end of the match wins.",
+        "Le terrain de jeu":"The playing field",
+        "Le terrain de jeu est un rectangle de 8 cases par 5. Il comporte 6 stations de réparation et 3 moteurs par équipe (pour un total de 6). Une zone de pièces supplémentaires pour chaque équipe se trouve également à une des extrémités du terrain.":"The playing field is an 8 by 5 grid. It includes 6 repair stations and 3 engines per team (6 total). An extra parts zone for each team is also located at one end of the field.",
+        "Les pièces de jeu":"Game pieces"
+
     };
 
 
