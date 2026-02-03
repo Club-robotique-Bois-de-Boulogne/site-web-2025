@@ -22,7 +22,7 @@
 
     let news = [];
     let index = 0;const pages = [
-        "accueil.html",
+        "index.html",
         "club.html",
         "equipe.html",
         "robot.html",
