@@ -1,12 +1,12 @@
 
     /* ===== HORLOGE ===== */
-    function updateClock() {
-        const d = new Date();
-        document.getElementById("clock").textContent =
-            `${String(d.getHours()).padStart(2,"0")} h ${String(d.getMinutes()).padStart(2,"0")}`;
-    }
-    setInterval(updateClock, 60000);
-    updateClock();
+    // function updateClock() {
+    //     const d = new Date();
+    //     document.getElementById("clock").textContent =
+    //         `${String(d.getHours()).padStart(2,"0")} h ${String(d.getMinutes()).padStart(2,"0")}`;
+    // }
+    // setInterval(updateClock, 60000);
+    // updateClock();
     /* ===================== NAVIGATION (DOT ACTIF) ===================== */
 
 
@@ -56,10 +56,10 @@
 
 // PROCHAINE STATION
     const nextIndex = (currentIndex + 1) % stations.length;
-    document.getElementById("stationName").textContent =
-        stations[nextIndex].name;
-    document.getElementById("stationImage").src =
-        stations[nextIndex].image;
+    // document.getElementById("stationName").textContent =
+    //     stations[nextIndex].name;
+    // document.getElementById("stationImage").src =
+    //     stations[nextIndex].image;
 
 
     async function loadNews() {
@@ -435,7 +435,7 @@
         "Avantage : Avec seulement 4 points de contact, la prise est plus constante, peu importe la position initiale de la GP.":"Advantage: With only four contact points, the grip remains consistent regardless of the GP’s initial position.",
         "Nous avions de la difficulté à fixer solidement le bras à son axe, ce qui causait une rotation indésirable autour de celui-ci. Pour résoudre ce problème, nous avons modifié l’axe afin de lui donner une forme de D-shaft, améliorant ainsi la transmission du couple et l’adhérence mécanique.":"We initially had difficulty securely fixing the arm to its shaft, which caused unwanted rotation around it. To solve this issue, we modified the shaft into a D-shaft shape, improving torque transmission and mechanical grip.",
         "À la suite d’une chute accidentelle du robot depuis sa station de réparation (deux tabourets), un axe de moteur s’est plié. Grâce à un étau, un peu d’huile de coude et beaucoup d’ingéniosité, nous avons pu redresser l’axe et remettre le moteur en état de fonctionnement. Résultat : +100$ !":"Following an accidental drop of the robot from its repair station (two stools), a motor shaft was bent. Using a vise, some elbow grease, and a lot of ingenuity, we managed to straighten the shaft and restore the motor to working condition. Result: $100 saved.",
-        "Bras":"Arms"
+        "Bras":"Arms",
     };
 
 
