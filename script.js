@@ -31,12 +31,12 @@
     ];
 
     const stations = [
-        { name: "Prochaine station : Accueil", image: "images/mur metro.webp" },
-        { name: "Prochaine station : Club", image: "images/club.webp" },
-        { name: "Prochaine station : L’équipe", image: "images/equipe.webp" },
-        { name: "Prochaine station : Bob le Robot", image: "images/robot.webp" },
-        { name: "Prochaine station : CRC", image: "images/CRC-Robotics.jpg" },
-        { name: "Prochaine station : Vidéo", image: "images/Mtl-metro-map.svg.png" }
+        { name: "Prochaine station/Next station : Accueil/Home", image: "images/mur metro.webp" },
+        { name: "Prochaine station/Next station : Club", image: "images/club.webp" },
+        { name: "Prochaine station/Next station : L’équipe/Team", image: "images/equipe.webp" },
+        { name: "Prochaine station/Next station : Bob Robot", image: "images/robot.webp" },
+        { name: "Prochaine station/Next station : CRC", image: "images/CRC-Robotics.jpg" },
+        { name: "Prochaine station/Next station : Video", image: "images/Mtl-metro-map.svg.png" }
     ];
 
     const dots = document.querySelectorAll(".dot");
