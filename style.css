@@ -1097,7 +1097,22 @@ fill: white;
 
 }
 
+.youtube-section {
+    text-align: center;
+}
 
+.youtube-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+
+    max-width: 1200px;
+    margin: 0 auto;     
+}
+
+.youtube-card {
+    margin: 0 auto;     
+}
 
 /* =========================================================
    FIN DU FICHIER CSS
