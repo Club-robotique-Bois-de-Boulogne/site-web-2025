@@ -420,7 +420,8 @@
         "Votre première arrêt consiste à découvrir le chemin chargé de cônes oranges qu'on a dû parcourir pour arriver à la compétition CRC. On vous rassure, que nous avons eu du plaisir.":"Your first stop is to discover the cone‑filled path we had to navigate to get to the CRC competition. Don’t worry — we still had fun along the way.",
         "Découvrez l'équipe !":"Discover the team",
         "L'équipe de robotique de Bois de Boulogne est composée d'étudiants passionnés de robotique et de technologie, ont travaillé fort cette année 2025-2026 pour vous offrir le meilleure spectacle":"The Bois‑de‑Boulogne robotics team is made up of students who are passionate about robotics and technology, and they worked hard this 2025–2026 year to offer you the best show.",
-        "Bob est le bolide de Émilien ne vous fiez pas à l'apparence, il va faire mordre la poussière à ses compétiteurs. il est venue pour gagner.":"Bob is Émilien’s racer. Don’t be fooled by its appearance — it’s going to leave its competitors in the dust. It came here to win."
+        "Bob est le bolide de Émilien ne vous fiez pas à l'apparence, il va faire mordre la poussière à ses compétiteurs. il est venue pour gagner.":"Bob is Émilien’s racer. Don’t be fooled by its appearance — it’s going to leave its competitors in the dust. It came here to win.",
+        "Chassis":"Frame"
     };
 
 
