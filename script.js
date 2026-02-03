@@ -461,13 +461,13 @@
         });
     }
 
-// ✅ AJOUTE CETTE FONCTION
+// setlanguage
     function setLanguage(lang) {
         localStorage.setItem("lang", lang);
         translatePage(lang);
     }
 
-// ✅ CORRIGE TON DOMContentLoaded
+// domcontentloaded    
     document.addEventListener("DOMContentLoaded", () => {
         const savedLang = localStorage.getItem("lang") || "fr";
         translatePage(savedLang);
