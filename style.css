@@ -304,7 +304,7 @@ header.sticky-header {
 
     /* centrage + débordement à droite */
     margin:0 auto;
-    transform: translateX(60px);
+    /* transform: translateX(60px); */
 
     padding: 10px 0;
 
@@ -1094,7 +1094,10 @@ fill: white;
         height: 100px;
         width: auto;
     }
-
+    .crc-page-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .youtube-section {
@@ -1114,6 +1117,14 @@ fill: white;
     margin: 0 auto;     
 }
 
+.lang-switch {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
 /* =========================================================
    FIN DU FICHIER CSS
 ========================================================= */
