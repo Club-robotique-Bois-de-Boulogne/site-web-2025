@@ -3,11 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="realContent">
+    <header class="sticky-header">
+        
+                <div class="top-row">
 
+                    <!-- ZONE À CACHER AU SCROLL -->
+                    <div class="header-hide-zone">
+
+                        <!-- PANNEAU GAUCHE -->
+                        <div class="side-panel">
+                            <div id="clock" class="clock">00 h 00</div>
+
+                            <div class="station-card">
+                                <img id="stationImage" src="" alt="Station">
+                                <div class="station-name" id="stationName" data-translate></div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- ACTUALITÉS -->
+                        <div class="news-screen">
+                            <img id="newsImage" alt="Actualité">
+                            <div class="news-overlay">
+                                <div class="news-title" id="newsTitle"></div>
+                                <div class="news-date" id="newsDate"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- MENU TOUJOURS VISIBLE -->
+                    <div class="menu-wrapper">
+                        <div class="cylinder">
+                            <a href="accueil.html" data-translate class="dot active"></a>
+                            <a href="club.html" data-translate class="dot"></a>
+                            <a href="equipe.html" data-translate class="dot"></a>
+                            <a href="robot.html" data-translate class="dot"></a>
+                            <a href="crc.html" data-translate class="dot"></a>
+                            <a href="video.html" data-translate class="dot"></a>
+                        </div>
+
+                        <div class="labels icons">
+                            <a href="accueil.html" title="Accueil">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+
+                            <a href="club.html" title="Club">
+                                <i class="fa-solid fa-users"></i>
+                            </a>
+
+                            <a href="equipe.html" title="Équipe">
+                                <i class="fa-solid fa-user-group"></i>
+                            </a>
+
+                            <a href="robot.html" title="Bob le Robot">
+                                <i class="fa-solid fa-robot"></i>
+                            </a>
+
+                            <a href="crc.html" title="compétition CRC">
+                                <i class="fa-solid fa-microchip"></i>
+                            </a>
+
+                            <a href="video.html" title="Vidéo">
+                                <i class="fa-solid fa-video"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+    </header>
+    </div>
     <div class="page-name">
         <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
             <circle class="circle" r="20" cx="50" cy="50"/>
@@ -51,10 +123,10 @@
                 <p>Le terrain de jeu est un rectangle de 8 cases par 5. Il comporte 6 stations de réparation et 3 moteurs par équipe (pour un total de 6). Une zone de pièces supplémentaires pour chaque équipe se trouve également à une des extrémités du terrain.</p>
                 <div class="img-list">
                     <div class="img-item">
-                        <img src="src/images/crc/terrainAngleView.png" alt="">
+                        <img src="images/crc/terrainAngleView.png" alt="">
                     </div>
                     <div class="img-item">
-                        <img src="src/images/crc/terrainTopView.png" alt="">
+                        <img src="images/crc/terrainTopView.png" alt="">
 
                 </div>
             </section>
@@ -64,15 +136,15 @@
                 <p>Dans le jeu, il existe trois types de pièces:</p>
                 <div class="img-list">
                     <div class="img-item">
-                        <img src="src/images/crc/pieces/blue_medium.png" alt="piece1">
+                        <img src="images/crc/pieces/blue_medium.png" alt="piece1">
                         <p>Ventilateur</p>
                     </div>
                     <div class="img-item">
-                        <img src="src/images/crc/pieces/blue_big.png" alt="piece1">
+                        <img src="images/crc/pieces/blue_big.png" alt="piece1">
                         <p>Coeur</p>
                     </div>
                      <div class="img-item">
-                        <img src="src/images/crc/pieces/blue_small.png" alt="piece1">
+                        <img src="images/crc/pieces/blue_small.png" alt="piece1">
                         <p>Turbine</p>
                     </div>
                 </div>
