@@ -407,7 +407,9 @@
             "Terms",
 
         "© 2025 Robotique BdeB":
-            "© 2025 BdeB Robotics"
+            "© 2025 BdeB Robotics",
+        "L'équipe de robotique de Bois-de-Boulogne est composée d'étudiants passionnés de robotique et de technologie. Ils ont travaillé fort cette année 2025-2026 pour vous offrir le meilleure spectacle.":"The Bois-de-Boulogne robotics team is made up of students who are passionate about robotics and technology. They worked hard during the 2025–2026 year to offer you the best show.",
+        "Bob est le bolide d'Émilien, ne vous fiez pas à l'apparence, il va faire mordre la poussière à ses compétiteurs. Son robotest venu pour gagner.":"Bob is a powerful racer. Don’t be fooled by its appearance — it’s going to leave its competitors in the dust. This robot is here to win."
     };
 
 
@@ -450,6 +452,7 @@
 
         document.querySelectorAll("#language-switcher button").forEach(btn => {
             btn.addEventListener("click", () => {
+                console.log(btn.dataset.lang)
                 setLanguage(btn.dataset.lang);
             });
         });
