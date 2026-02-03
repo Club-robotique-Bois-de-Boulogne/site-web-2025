@@ -1,12 +1,12 @@
 
     /* ===== HORLOGE ===== */
-    // function updateClock() {
-    //     const d = new Date();
-    //     document.getElementById("clock").textContent =
-    //         `${String(d.getHours()).padStart(2,"0")} h ${String(d.getMinutes()).padStart(2,"0")}`;
-    // }
-    // setInterval(updateClock, 60000);
-    // updateClock();
+    function updateClock() {
+        const d = new Date();
+        document.getElementById("clock").textContent =
+            `${String(d.getHours()).padStart(2,"0")} h ${String(d.getMinutes()).padStart(2,"0")}`;
+    }
+    setInterval(updateClock, 60000);
+    updateClock();
     /* ===================== NAVIGATION (DOT ACTIF) ===================== */
 
 
@@ -56,10 +56,10 @@
 
 // PROCHAINE STATION
     const nextIndex = (currentIndex + 1) % stations.length;
-    // document.getElementById("stationName").textContent =
-    //     stations[nextIndex].name;
-    // document.getElementById("stationImage").src =
-    //     stations[nextIndex].image;
+    document.getElementById("stationName").textContent =
+        stations[nextIndex].name;
+    document.getElementById("stationImage").src =
+        stations[nextIndex].image;
 
 
     async function loadNews() {
